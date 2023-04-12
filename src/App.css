@@ -1,0 +1,245 @@
+
+/* Importaciones */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/software-upload.css');
+
+/* Estilos principales */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  background-color: #162021;
+}
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  color:#89FA4C;
+  font-size: x-large;
+  text-shadow: 2px 2px 2px gray, 4px 4px 4px black;
+}
+.imagen{
+  width: 700px;
+  
+}
+
+/* Estilos de la lista */
+.lista{
+  height: 600px;
+  width: 900px;
+  background: url('./img/grid.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  margin-top: -150px;
+  overflow: hidden;
+ 
+  
+}
+  
+ul{
+  margin-top: 60px;
+  width: 850px;
+  list-style-type: none;
+  
+  
+}
+ 
+.dir{
+  
+  gap:10px;
+  padding: 5px;
+  width: 550px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  font-family: 'Orbitron', sans-serif;
+  color:#89FA4C;
+  font-size: 25px;
+  text-transform: uppercase;
+      animation: typing;
+      animation-duration: 1.5s;
+      animation-timing-function: steps(2000000, end);
+      animation-fill-mode: forwards;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0;
+ 
+}.dir:hover{
+  color:white;
+  text-shadow: -1px 4px 8px  #89FA4C;
+  transition:text-shadow,color 0.5s ease;
+}
+
+/* estilos de inputs */
+.numDirective{
+  margin-left: 20px;
+  padding: 10px;
+}
+.doneDirective{
+  text-decoration: line-through;
+  color:#ffcb3b;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.inputData{
+  font-family: 'Orbitron', sans-serif;
+  color:#89FA4C;
+  margin-left: 900px;
+  margin-top: -150px;
+  font-size:x-large;
+}
+.inputData:hover{
+color:white;
+text-shadow: 4px 4px 8px  #89FA4C;
+transition:text-shadow,color 0.5s ease;
+}
+
+.input{
+ background:none;
+ font-size: x-large;
+ margin-left: 5px;
+ color:#89FA4C;
+ font-family: 'Orbitron', sans-serif;
+ margin-top: -100px;
+}
+
+.input:focus{
+  box-shadow: 4px 4px 8px  #89FA4C;
+  color:white;
+  text-shadow: 4px 4px 8px  #89FA4C;
+  transition:text-shadow,color 0.5s ease;
+ 
+}
+button{
+  margin-top: -100px;
+  background-color: #89FA4C;
+}
+.gg-software-upload {
+  
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 20px;
+  height:20px;
+  border: 2px solid;
+  border-top: 0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-top: 8px
+}
+.gg-software-upload::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid;
+  border-top: 2px solid;
+  transform: rotate(45deg);
+  left: 2px;
+  bottom: 4px
+}
+.gg-software-upload::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  height: 10px;
+  background-color: #89FA4C;
+  left: 5px;
+  bottom: 3px
+}
+/* animaciones */
+.blink{
+ 
+  font-size: 100px;
+  color:#89FA4C;
+  margin-left: -5px;
+  align-items: baseline;
+  animation: blink 500ms linear infinite;
+ 
+      }
+      
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        
+        100% {
+          opacity: 1;
+        }
+      }      
+      .typed {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+        animation: typing;
+        animation-duration: 1.5s;
+        animation-timing-function: steps(1000000, end);
+        animation-fill-mode: forwards;
+        animation-iteration-count: 6,infinite;
+      }
+        
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* Etilos dl Checkbox */
+      input[type='radio']:after {
+      
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #162021;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #89FA4C;
+    }  
+
+    input[type='radio']:checked:after {
+      
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color:#89FA4C;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #89FA4C;
+    }
+    
+    .title{
+      display: flex;
+      justify-content:flex-start;
+      
+      font-size: 24px;
+      
+    }
+    
+   .crossed{
+    /* text-decoration: line-through; */
+    width: 30px;
+    background-color:red;
+    border: red;
+   }
