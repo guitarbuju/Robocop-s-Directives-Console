@@ -130,12 +130,15 @@ const sounds=()=>{
       />
      <div className="inputData">
       <h3>New Directives:</h3>
-        <label>Directive</label>
+      <div className="cuadro">
+      <label >Directive</label>
         <input className="input" type='text' value={input} 
         onChange={(e)=>cambiaInput(e.target.value)} onFocus={()=>setimage(robocop2)}/>
         
         <button onClick={()=>{addDirective();}}  
         >  <i className="gg-software-upload"></i></button>
+      </div>
+       
       </div>
           
     </div>
